@@ -1,3 +1,4 @@
-CREATE VIEW cars_1_3 AS
-SELECT * FROM Cars
-WHERE name = "Audi" OR name = "Skoda";
+CREATE VIEW skoda_audi_cars AS
+SELECT *
+FROM cars
+WHERE name IN ('Skoda', 'Audi');
