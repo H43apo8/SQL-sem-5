@@ -1,3 +1,4 @@
-CREATE VIEW cars_1_1 AS
-SELECT * FROM Cars
+CREATE VIEW cars_under_25000 AS
+SELECT *
+FROM cars
 WHERE cost < 25000;
