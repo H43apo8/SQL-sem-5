@@ -1,0 +1,1 @@
+CREATE DATABASE gb_seminar5;
