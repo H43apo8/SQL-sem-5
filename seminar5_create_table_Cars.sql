@@ -1,15 +1,20 @@
-CREATE TABLE Cars
+CREATE TABLE cars
 (
-    id    INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(30) NULL,
-    cost  INT NULL
+	id INT NOT NULL PRIMARY KEY,
+    name VARCHAR(45),
+    cost INT
 );
 
-INSERT INTO Cars (name, cost) VALUES ('Audi', 52642);
-INSERT INTO Cars (name, cost) VALUES ('Mercedes', 57127);
-INSERT INTO Cars (name, cost) VALUES ('Skoda', 9000);
-INSERT INTO Cars (name, cost) VALUES ('Volvo', 29000);
-INSERT INTO Cars (name, cost) VALUES ('Bentley', 350000);
-INSERT INTO Cars (name, cost) VALUES ('Citroen', 21000);
-INSERT INTO Cars (name, cost) VALUES ('Hummer', 41400);
-INSERT INTO Cars (name, cost) VALUES ('Volkswagen', 21600);	
+INSERT cars
+VALUES
+	(1, "Audi", 52642),
+    (2, "Mercedes", 57127 ),
+    (3, "Skoda", 9000 ),
+    (4, "Volvo", 29000),
+	(5, "Bentley", 350000),
+    (6, "Citroen ", 21000 ), 
+    (7, "Hummer", 41400), 
+    (8, "Volkswagen ", 21600);
+    
+SELECT *
+FROM cars;
